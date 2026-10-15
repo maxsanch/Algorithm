@@ -1,9 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-// on veut réaliser un array qui est remplissable de valeures, cependant, lors de sa création, ce dernier doit avoir une valeure fixe.
-
-
 long int* new_array(long int n) {
     long int* new_array = malloc(n*sizeof(long int));
 
@@ -60,7 +57,6 @@ long int* deletionArray(long int* array, long int n, long int i) {
 
 void main() {
   long int* array = new_array(10);
-  // printf("%ld\n", direct_access(array, 4));
   print_array(array, 10);
 
   print_array(deletionArray(array, 10, 4), 9);
